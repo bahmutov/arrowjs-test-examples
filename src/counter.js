@@ -1,7 +1,7 @@
 import { reactive, html } from '@arrow-js/core'
 
 const data = reactive({
-  clicks: 20,
+  clicks: 0,
 })
 
 export const counter = html`
