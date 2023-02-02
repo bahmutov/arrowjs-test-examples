@@ -15,6 +15,8 @@ module.exports = defineConfig({
   },
 
   component: {
+    viewportWidth: 1000,
+    viewportHeight: 300,
     specPattern: 'src/**/*.cy.js',
     devServer: {
       framework: 'react',
