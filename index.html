@@ -1,19 +1,20 @@
 <body>
   <div id="app"></div>
   <script type="module">
-    import { reactive, html } from '@arrow-js/core'
+    // import { reactive, html } from '@arrow-js/core'
 
-    const data = reactive({
-      clicks: 0,
-    })
+    // const data = reactive({
+    //   clicks: 0,
+    // })
 
-    const template = html`
-      <button @click="${() => data.clicks++}">
-        Fired ${() => data.clicks} arrows
-      </button>
-    `
+    // const template = html`
+    //   <button @click="${() => data.clicks++}">
+    //     Fired ${() => data.clicks} arrows
+    //   </button>
+    // `
+    import { counter } from './src/counter.js'
 
     const appElement = document.getElementById('app')
-    template(appElement)
+    counter(appElement)
   </script>
 </body>

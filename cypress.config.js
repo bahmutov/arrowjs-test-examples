@@ -13,4 +13,12 @@ module.exports = defineConfig({
       // and load any plugins that require the Node environment
     },
   },
+
+  component: {
+    specPattern: 'src/**/*.cy.js',
+    devServer: {
+      framework: 'react',
+      bundler: 'vite',
+    },
+  },
 })
